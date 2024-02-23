@@ -6,7 +6,7 @@ const browserSync = require('browser-sync').create();
 const clean = require('gulp-clean');
 
 function styles() {
-    return src('app/css/style.scss')
+    return src('app/scss/style.scss')
     .pipe(concat('style.min.css'))
     .pipe(scss({outputStyle: 'compressed'}))
     .pipe(dest('app/css'))
@@ -45,4 +45,4 @@ exports.watching = watching;
 exports.browsersync = browsersync;
 
 exports.build = series(cleanDist, building)
-exports.default = parallel(styles, browserSync, watching);
+exports.default = parallel(styles, browsersync, watching);
