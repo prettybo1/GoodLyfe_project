@@ -1,4 +1,16 @@
 @import "normalizez.scss";
 @import "resets.scss";
 
+$pink-color: #E43071;
 
+
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    background-color: lightgrey;
+
+}
+
+.header {
+    background-color: $pink-color;
+}
