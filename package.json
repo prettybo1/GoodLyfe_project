@@ -15,5 +15,8 @@
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^5.1.0",
     "sass": "^1.70.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
   }
 }
