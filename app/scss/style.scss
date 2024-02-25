@@ -1,7 +1,7 @@
 @import "normalizez.scss";
 @import "resets.scss";
 
-// ========================================================
+// ===========================VALUES=============================
 
 $pink-color: #e43071;
 $light_pink-color: #ffc1d8;
@@ -20,7 +20,7 @@ body {
   background-color: lightgrey;
 }
 
-// ========================================================
+// ========================NAVBAR================================
 
 .header {
   background-color: $pink-color;
@@ -81,5 +81,21 @@ body {
   &__link:hover::after {
     opacity: 1;
   }
-  
+  &__login-button {
+    margin: -30px 0px;
+    padding: 10px 60px;
+    border-radius: 40px;
+    font-size: 18px;
+    border: none;
+    color: $pink-color;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    outline: none;
+  }
+  &__login-button:hover {
+    transform: scale(1.05);
+  }
+  &__login-button:active {
+    transform: scale(0.95);
+    box-shadow: inset 0 3px 5px $pink-color
+  }
 }
