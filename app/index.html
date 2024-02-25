@@ -9,9 +9,13 @@
     <meta property="og:locate" content="en">
     <meta property="og:site_name" content="GoodLife SportGym">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,regular,500,600,700,800,900,"rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+        rel="stylesheet" />
     <link rel="stylesheet" href="css/style.scss">
     <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>GoodLife</title>
 </head>
 
@@ -47,19 +51,37 @@
             </nav>
         </div>
     </header>
-    
+
     <main class="main-content">
-        <h1 class="main-content__title">Welcome to<br>Goodlyfe Gyms</h1>
-        <div class="main-content__images">
-            <img class="main-content__image" src="#" alt="#">
-            <img class="main-content__image" src="#" alt="#">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="src/img/carousel_img/Female_working_out.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="src/img/carousel_img/photo5339383019334642782.png" class="d-block w-100" alt="..." width="1440" height="599.9">
+                </div>
+                <div class="carousel-item">
+                    <img src="src/img/carousel_img/woman-trn-zal-3.png" class="d-block w-100" alt="..." width="1440" height="599.9">
+                </div>
+            </div>
         </div>
+
+        <!-- Text 'n button on carousel -->
+        <div class="overlay-content">
+            <h2 class="overlay-title">Welcome to<br>Good<span class="overlay-title__pink-text">lyfe</span> Gyms</h2>
+            <button class="overlay-button">See the benefits</button>
+        </div>
+        </div>
+
         <div class="main-content__text-block">
             <h2 class="main-content__subtitle">Meet your new body</h2>
-            <p class="main-content__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus<br> eget lectus urna. Nulla magna tortor, bibendum in molestie sed,<br> gravida nec felis. Sed id egestasegestas risus, ut imperdiet augue.</p>
+            <p class="main-content__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus<br> eget
+                lectus urna. Nulla magna tortor, bibendum in molestie sed,<br> gravida nec felis. Sed id egestasegestas
+                risus, ut imperdiet augue.</p>
         </div>
         <button class="main-content__button-faq">View the FAQ</button>
-    
+
         <section class="contentSection">
             <h2 class="sectionH2">
                 Become more than you are.
@@ -70,7 +92,7 @@
             </p>
             <button class="sectionButton1">Let’s do it!</button>
         </section>
-    
+
         <section class="contentSection2">
             <div class="contentSection2__images">
                 <img class="contentSection2__image" src="#" alt="#">
@@ -86,13 +108,13 @@
             </div>
             <button class="sectionButton2">Learn more</button>
         </section>
-    
+
         <section class="contentSection3">
             <h2 class="realStoriesText">
                 Real Stories from Real Customers
             </h2>
             <p>Be inspired with these experiences.</p>
-    
+
             <section class="card1">
                 <h2 class="cardH2">
                     3Kg lost!
@@ -111,7 +133,7 @@
                     James John
                 </h3>
             </section>
-    
+
             <section class="card2">
                 <h2 class="cardH2">
                     17Kg lost!
@@ -127,7 +149,7 @@
                     Mary Patricia
                 </h3>
             </section>
-    
+
             <section class="card3">
                 <h2 class="cardH2">
                     43Kg lost!
@@ -142,7 +164,7 @@
                 </h3>
             </section>
         </section>
-    
+
         <section class="appSection">
             <h2 class="appH2">
                 Don’t forget our app
@@ -158,14 +180,14 @@
             <button class="googleButton">Google Play</button>
             <button class="appStoreButton">App Store</button>
         </section>
-    
+
         <div class="social">
             <a class="social__link" href="#"><img class="social__icon" src="#" alt="">facebook</a>
             <a class="social__link" href="#"><img class="social__icon" src="#" alt="">instagram</a>
             <a class="social__link" href="#"><img class="social__icon" src="#" alt="">youtube</a>
         </div>
     </main>
-    
+
     <footer class="footer">
         <div class="footerContetnt">
             <section class="footerContent1">
@@ -224,6 +246,9 @@
         </div>
     </footer>
     <script src="js/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
