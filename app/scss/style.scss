@@ -174,12 +174,12 @@ $carousel-transition-duration: 0.1s;
     background-color: white;
     color: $pink-color;
     transition: transform 0.2s ease, box-shadow 0.2s ease,
-    background-color 0.2s ease, color 0.2s ease;
+      background-color 0.2s ease, color 0.2s ease;
 
     &:hover {
       transform: scale(1.05);
-      background-color: $pink-color; 
-      color: white; 
+      background-color: $pink-color;
+      color: white;
     }
 
     &:active {
@@ -187,4 +187,44 @@ $carousel-transition-duration: 0.1s;
       box-shadow: inset 0 3px 5px $pink-color;
     }
   }
+}
+
+// ======================SECTION1==================================
+
+.contentSection {
+  margin-top: 20px;
+  position: relative;
+}
+
+.contentSection__overlay-text1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.contentSection__overlay-title1 {
+  font-size: 24px;
+  color: white;
+}
+
+.contentSection__overlay-paragraph1 {
+  font-size: 16px;
+  color: white;
+}
+
+.contentSection__overlay-button1 {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: $pink-color;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contentSection__overlay-button1:hover {
+  background-color: $light_pink-color;
 }
