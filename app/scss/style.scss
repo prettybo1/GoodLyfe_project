@@ -152,6 +152,13 @@ $carousel-transition-duration: 0.1s;
   font-family: Poppins;
   max-width: 1240px;
   margin: 0 auto;
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #ffffff 70%,
+    $pink-color 230%
+  );
+
   &__subtitle {
     margin-top: 30px;
     text-align: center;
@@ -194,6 +201,7 @@ $carousel-transition-duration: 0.1s;
 .contentSection {
   margin-top: 20px;
   position: relative;
+  font-family: Poppins;
 }
 
 .contentSection__overlay-text1 {
@@ -202,29 +210,97 @@ $carousel-transition-duration: 0.1s;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  font-weight: 600;
+  font-size: 17px;
 }
 
 .contentSection__overlay-title1 {
-  font-size: 24px;
+  font-weight: 700;
+  font-size: 60px;
   color: white;
 }
 
 .contentSection__overlay-paragraph1 {
   font-size: 16px;
   color: white;
+  margin-top: 20px;
 }
 
 .contentSection__overlay-button1 {
-  padding: 10px 20px;
-  border-radius: 5px;
+  margin-top: 15px;
+  padding: 20px 70px;
+  border: none;
+  border-radius: 40px;
   background-color: $pink-color;
   color: white;
-  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  outline: none;
   font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+  &:active {
+    transform: scale(0.95);
+    box-shadow: inset 0 3px 5px white;
+  }
 }
 
-.contentSection__overlay-button1:hover {
-  background-color: $light_pink-color;
+// ======================SECTION2==================================
+
+.contentSection2 {
+  margin: 60px;
+  display: flex;
+  font-family: Poppins;
+  &__images {
+    position: relative;
+    order: 1;
+    margin: 34px 94px;
+    &.first-image {
+      position: absolute;
+      margin: 150px 210px;
+    }
+    &.second-image {
+      position: absolute;
+      margin: 10px 40px;
+    }
+  }
+  &__text-block {
+    margin: 100px 0px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    color: $pink-color;
+  }
+  &__paragraph {
+    font-weight: 400;
+    font-size: 16px;
+    color: $grey-color;
+  }
+  &__second-section-button {
+    margin-top: 20px;
+    padding: 20px 70px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 40px;
+    border: 2px solid $pink-color;
+    background-color: white;
+    color: $pink-color;
+    transition: transform 0.2s ease, box-shadow 0.2s ease,
+    background-color 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      background-color: $pink-color;
+      color: white;
+    }
+
+    &:active {
+      transform: scale(0.95);
+      box-shadow: inset 0 3px 5px $pink-color;
+    }
+  }
 }
+
+// ======================SECTION3==================================
+
