@@ -100,8 +100,10 @@
 
         <section class="contentSection2">
             <div class="contentSection2__images">
-                <img class="contentSection2__images first-image" src="src/img/second_section_img/Gym_Imagery.png" alt="#">
-                <img class="contentSection2__images second-image" src="src/img/second_section_img/Gym_Imagery2.png" alt="#">
+                <img class="contentSection2__images first-image" src="src/img/second_section_img/Gym_Imagery.png"
+                    alt="#">
+                <img class="contentSection2__images second-image" src="src/img/second_section_img/Gym_Imagery2.png"
+                    alt="#">
             </div>
             <div class="contentSection2__text-block">
                 <h2 class="contentSection2__title">
@@ -117,68 +119,72 @@
 
 
         <section class="comments">
-            <img src="src/img/comments_img/Real_stories_copy.png" alt="">
+            <img src="src/img/comments_img/Real_stories_copy.png" alt="" class="comments__image">
             <h2 class="comments__title">
                 Real Stories from<br> Real Customers
             </h2>
             <p class="comments__description">Be inspired with these experiences.</p>
-        
-            <section class="comments__card card1">
-                <h2 class="comments__card-title">
-                    3Kg lost!
-                </h2>
-                <p class="comments__card-description">
-                    Lorem ipsum dolor sit amet,<br>
-                    consectetur adipiscing elit.<br>
-                    Vivamus eget lectus urna.<br>
-                    Nulla magna tortor,<br>
-                    bibendum in molestie sed,<br>
-                    gravida nec felis. Sed id<br>
-                    egestasegestas risu.
-                </p>
-                <img class="comments__card-image" src="#" alt="#">
-                <h3 class="comments__card-comment">
-                    James John
-                </h3>
-            </section>
-        
-            <section class="comments__card card2">
-                <h2 class="comments__card-title">
-                    17Kg lost!
-                </h2>
-                <p class="comments__card-description">
-                    Lorem ipsum dolor sit amet,<br>
-                    consectetur adipiscing elit. Vivamus<br>
-                    eget lectus urna. Nulla magna tortor,<br>
-                    bibendum in mo.
-                </p>
-                <img class="comments__card-image" src="#" alt="#">
-                <h3 class="comments__card-comment">
-                    Mary Patricia
-                </h3>
-            </section>
-        
-            <section class="comments__card card3">
-                <h2 class="comments__card-title">
-                    43Kg lost!
-                </h2>
-                <p class="comments__card-description">
-                    Lorem ipsum dolor sit amet,<br>
-                    consectetur adipiscing elit.
-                </p>
-                <img class="comments__card-image" src="#" alt="#">
-                <h3 class="comments__card-comment">
-                    Robert Micheal
-                </h3>
-            </section>
+            <div class="comments__card">
+                <section class="comments__card-item card1">
+                    <h2 class="comments__card-title">
+                        3Kg lost!
+                    </h2>
+                    <p class="comments__card-description">
+                        Lorem ipsum dolor sit amet,<br>
+                        consectetur adipiscing elit.<br>
+                        Vivamus eget lectus urna.<br>
+                        Nulla magna tortor,<br>
+                        bibendum in molestie sed,<br>
+                        gravida nec felis. Sed id<br>
+                        egestasegestas risu.
+                    </p>
+
+                    <h3 class="comments__card-comment1">
+                        James<br> John
+                    </h3>
+
+                </section>
+
+                <section class="comments__card-item card2">
+                    <h2 class="comments__card-title">
+                        17Kg lost!
+                    </h2>
+                    <p class="comments__card-description">
+                        Lorem ipsum dolor sit amet,<br>
+                        consectetur adipiscing elit. Vivamus<br>
+                        eget lectus urna. Nulla magna tortor,<br>
+                        bibendum in mo.
+                    </p>
+
+                    <h3 class="comments__card-comment2">
+                        Mary<br> Patricia
+                    </h3>
+
+                </section>
+
+                <section class="comments__card-item card3">
+                    <h2 class="comments__card-title">
+                        43Kg lost!
+                    </h2>
+                    <p class="comments__card-description">
+                        Lorem ipsum dolor sit amet,<br>
+                        consectetur adipiscing elit.z`
+                    </p>
+                    <h3 class="comments__card-comment3">
+                        Robert<br> Micheal
+                    </h3>
+
+                </section>
+            </div>
         </section>
-        
+
+
 
         <section class="appSection">
-            <h2 class="appH2">
+            <h2 class="appSection__title">
                 Don’t forget our app
             </h2>
-            <p>
+            <p class="appSection__description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
                 Vivamus eget lectus urna. Nulla magna tortor, bibendum in<br>
                 molestie sed, gravida nec felis. Sed id egestasegestas risus,<br>
@@ -186,8 +192,10 @@
                 <br>
                 Download:
             </p>
-            <button class="googleButton">Google Play</button>
-            <button class="appStoreButton">App Store</button>
+            <div class="appSection__app-buttons">
+                <button class="appSection__button appSection__button--google"><img src="src/img/buttons_logo/google_button.png" class="google-logo-button" alt="">Google Play</button>
+                <button class="appSection__button appSection__button--appStore">App Store</button>
+            </div>            
         </section>
 
         <div class="social">
@@ -195,6 +203,7 @@
             <a class="social__link" href="#"><img class="social__icon" src="#" alt="">instagram</a>
             <a class="social__link" href="#"><img class="social__icon" src="#" alt="">youtube</a>
         </div>
+
     </main>
 
     <footer class="footer">

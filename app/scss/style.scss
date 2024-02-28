@@ -335,4 +335,110 @@ $carousel-transition-duration: 0.1s;
 }
 
 .comments__card {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 50px;
+  font-family: Poppins;
+}
+
+.card1 {
+  display: block;
+  width: 344px;
+  height: 445px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card2 {
+  display: block;
+  width: 344px;
+  height: 445px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card3 {
+  display: block;
+  width: 344px;
+  height: 445px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+.comments__card-title {
+  margin: 24px 24px;
+  font-weight: 600;
+  font-size: 38px;
+  color: $pink-color;
+}
+
+.comments__card-description {
+  margin: 24px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  color: $grey-color;
+}
+
+.comments__card-comment1 {
+  font-weight: 600;
+  font-size: 18px;
+  color: $dark-gray;
+  margin: 54px 24px;
+}
+
+.comments__card-comment2 {
+  font-weight: 600;
+  font-size: 18px;
+  color: $dark-gray;
+  margin: 78px 24px;
+}
+.comments__card-comment3 {
+  font-weight: 600;
+  font-size: 18px;
+  color: $dark-gray;
+  margin: 184px 24px;
+}
+
+// ======================APP==================================
+
+.appSection {
+  margin-top:60px;
+  background-color: $pink-color;
+  font-family: Poppins;
+  &__title {
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 100px 0px 0px 100px;
+  }
+  &__description {
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0px 0px 10px 100px;
+    color: white;
+  }
+  &__app-buttons { 
+    display: flex;
+    margin: 0px 100px;
+  }
+  &__button--google {
+    margin-bottom: 40px;
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid #A6A6A6;  
+    color: white;
+    background-color:black;
+  }
+  &__button--appStore {
+    margin-bottom: 40px;
+    margin-left: 15px;
+    border-radius: 15px;
+    padding: 25px;
+    border: 2px solid #A6A6A6;
+    color: white;
+    background-color:black;
+  }
 }
