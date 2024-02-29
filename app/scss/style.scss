@@ -7,8 +7,8 @@ $pink-color: #e43071;
 $light_pink-color: #ffc1d8;
 $grey-color: #858585;
 $dark-gray: #424242;
-$smoke-gray: #EDEDED;
-
+$smoke-gray: #ededed;
+$dark-blue: #0B0D17;
 
 // ========================================================
 
@@ -296,7 +296,7 @@ $carousel-transition-duration: 0.1s;
     background-color: white;
     color: $pink-color;
     transition: transform 0.2s ease, box-shadow 0.2s ease,
-    background-color 0.2s ease, color 0.2s ease;
+      background-color 0.2s ease, color 0.2s ease;
 
     &:hover {
       transform: scale(1.05);
@@ -411,68 +411,69 @@ $carousel-transition-duration: 0.1s;
   background-color: $pink-color;
   font-family: Poppins;
   display: flex;
-  justify-content: space-between; 
-  padding: 0 180px; 
+  justify-content: space-between;
+  padding: 0 180px;
   &__content {
-      flex: 1; 
-      padding-right: 50px; 
+    flex: 1;
+    padding-right: 50px;
   }
 
   &__title {
-      color: white;
-      font-weight: 700;
-      font-size: 40px;
-      padding-top: 100px;
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    padding-top: 100px;
   }
 
   &__description {
-      font-weight: 400;
-      font-size: 16px;
-      padding-bottom: 10px;
-      color: white;
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 10px;
+    color: white;
   }
 
   &__app-buttons {
-      display: flex;
-      margin-bottom: 40px;
-      .appSection__button {
-          transition: all 0.3s ease;
-      }
+    display: flex;
+    margin-bottom: 40px;
+    .appSection__button {
+      transition: all 0.3s ease;
+    }
   }
 
   &__button--google,
   &__button--appStore {
-      border-radius: 15px;
-      padding: 20px;
-      border: 2px solid #A6A6A6;
-      color: white;
-      background-color: black;
-      cursor: pointer;
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid #a6a6a6;
+    color: white;
+    background-color: $dark-blue;
+    cursor: pointer;
 
-      &:hover {
-          background-color: darken(black, 10%);
-      }
+    &:hover {
+      background-color: darken($dark-blue, 20%);
+    }
 
-      &:active {
-          transform: translateY(2px);
-          box-shadow: none;
-      }
+    &:active {
+      transform: translateY(2px);
+      box-shadow: none;
+    }
   }
 
   &__button--appStore {
-      margin-left: 15px;
-      padding: 25px;
+    margin-left: 15px;
+    padding: 25px;
   }
 
   &__phone-image {
-      flex-shrink: 0;
-      margin-top: -44px;
+    flex-shrink: 0;
+    margin-top: -44px;
   }
 }
 
 // ======================SOCIAL==================================
 
 .social {
+  font-family: Poppins;
   background-color: $smoke-gray;
   &__title {
     font-weight: 700;
@@ -481,4 +482,37 @@ $carousel-transition-duration: 0.1s;
     padding-top: 30px;
     color: $pink-color;
   }
+  &__links {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 18px;
+    padding: 45px 0px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px; /* Размеры круглых фонов */
+    height: 110px;
+    border-radius: 50%; /* Создаем круглый фон */
+    background-color: white; /* Белый фон */
+    margin-right: 10px; /* Расстояние между ссылками */
+  }
+
+  &__icon {
+    width: 80%; /* Размеры иконки */
+    height: auto;
+  }
+}
+
+// ======================FOOTER==================================
+
+.footer {
+  background-color: $dark-blue;
+  max-width: 1240px;
+  margin: 0 auto;
+  font-family: Poppins;
+
 }
