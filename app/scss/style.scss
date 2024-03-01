@@ -556,7 +556,8 @@ $carousel-transition-duration: 0.1s;
       font-size: 20px;
       color: $grey-color;
     }
-    &.quick-links li, a {
+    &.quick-links li,
+    a {
       padding: 4px 0px;
       font-weight: 400;
       font-size: 14px;
@@ -572,7 +573,8 @@ $carousel-transition-duration: 0.1s;
       font-size: 20px;
       color: $grey-color;
     }
-    &.guides-links li, a {
+    &.guides-links li,
+    a {
       padding: 4px 0px;
       font-weight: 400;
       font-size: 14px;
@@ -597,6 +599,6 @@ $carousel-transition-duration: 0.1s;
     }
     &.reach-us-links img {
       margin-right: 8px;
-  }
+    }
   }
 }
